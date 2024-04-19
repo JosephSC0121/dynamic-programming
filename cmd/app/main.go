@@ -30,7 +30,7 @@ func LoadTriangle() {
 }
 
 func readLines() ([]string, error) {
-	file, err := os.Open("p067_triangle.txt")
+	file, err := os.Open("/home/joseph/workspace/dynamic-programming/p067_triangle.txt")
 	if err != nil {
 		return nil, err
 	}
