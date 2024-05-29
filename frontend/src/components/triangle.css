@@ -1,0 +1,10 @@
+.row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  input {
+    width: 20px; /* Ancho suficiente para un solo número */
+    text-align: center; /* Alinea el texto al centro del campo de entrada */
+    margin: 0 2px; /* Margen entre los campos de entrada */
+  }

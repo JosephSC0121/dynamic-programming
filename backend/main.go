@@ -30,7 +30,7 @@ func LoadTriangle() {
 }
 
 func readLines() ([]string, error) {
-	file, err := os.Open("/home/joseph/workspace/dynamic-programming/p067_triangle.txt")
+	file, err := os.Open("/home/joseph/workspace/dynamic-programming/backend/p067_triangle.txt")
 	if err != nil {
 		return nil, err
 	}
@@ -78,6 +78,7 @@ func FindGreatestPath(triangle [][]int) (pathSum int) {
 	for i := 0; i < len(triangle[y]); i++ {
 		pathVal := ReducePaths(triangle, i, y)
 		if pathVal > pathSum {
+
 			pathSum = pathVal
 		}
 	}
